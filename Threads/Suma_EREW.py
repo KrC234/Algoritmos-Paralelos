@@ -7,11 +7,11 @@ import time
 # Suma EREW (Exclusive Reading Exclusive Writing)
 def threadAdd(i,j,A):
     if (((2*j) % (m.pow(2,i))) == 0):
-        A[2*j] =  A[2*j] + A[((2*j)-((int)(m.pow(2,i-1))))]
+        A[2*j] =  A[2*j] + A[((2*j) - ((int)(m.pow(2,i-1))))]
     time.sleep(1)
 
 def main():
-    print("Suma Erew mediante el modulo Threading")
+    print('Suma Erew mediante el modulo Threading')
     A = [0,1,1,1,1,1,1,1,1]
     print(A)
 
@@ -22,7 +22,7 @@ def main():
 
     '''
     Se emulan ciclos paralelos mediante ciclos repetitivos 
-    Los la razón de uso de hilos se da mediante una función logaritmica
+    La razón de uso de hilos se da mediante una función logaritmica
     Se inicializan los hilos en un conjunto y después se finalizan
     '''
     for i in range(1,log+1):
